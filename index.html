@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NodScroll — Scroll Reels with your head</title>
+  <meta name="description"
+    content="A weird-but-useful desktop app that lets you scroll on your PC/laptop using head nods. Perfect for eating while watching reels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://creem.io/js/embed.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <img src="assets/Untitled design (10).png" alt="NodScroll Logo" class="hero-logo">
+      <h1>NodScroll</h1>
+      <p>Scroll Reels with your head. That's it. Nod to scroll reels.</p>
+      <a href="#download" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+          style="vertical-align: middle; margin-right: 10px; margin-top: -2px;">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download NodScroll
+      </a>
+    </header>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <div class="quote-mark">"</div>
+      <p id="testimonial-text">
+        I built NodScroll because scrolling with hands while eating is like unnecessary hell. Now,
+        my friends use it daily to browse reels hands-free after a long day.
+        Perfect for students, gamers, devs, and you.
+      </p>
+    </section>
+
+    <!-- Demo Video Area -->
+    <section class="demo-section">
+      <video class="video-preview" autoplay loop muted playsinline>
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Features -->
+    <section class="nerdy-details">
+      <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          style="vertical-align: middle; margin-right: 12px; color: var(--accent);">
+          <circle cx="7" cy="12" r="3"></circle>
+          <circle cx="17" cy="12" r="3"></circle>
+          <path d="M10 12h4"></path>
+        </svg>
+        Nerdy Details
+      </h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-label"><span
+              style="width:8px;height:8px;background:var(--accent);border-radius:50%"></span>FILTER_ENGINE</div>
+          <h3>EMA Smoothing</h3>
+          <p>The app uses a low-pass filter (0.4/0.6 ratio) to eliminate webcam sensor noise and minor head jitters,
+            ensuring the tracking HUD doesn't "shake."</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-label"><span
+              style="width:8px;height:8px;background:var(--accent);border-radius:50%"></span>GESTURE_LOCK</div>
+          <h3>Spatio-Temporal Debounce</h3>
+          <p>Nods are detected using a 0.5-second rolling window. To prevent "ghost scrolls," it enforces an 800ms
+            cooldown lock after each gesture.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-label"><span
+              style="width:8px;height:8px;background:var(--accent);border-radius:50%"></span>MOTION_LOGIC</div>
+          <h3>Vertical Thresholding</h3>
+          <p>A scroll only triggers when movement delta exceeds 4% of viewport height, filtering out normal facial
+            micro-expressions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon-label"><span
+              style="width:8px;height:8px;background:var(--accent);border-radius:50%"></span>VISION_CORE</div>
+          <h3>Dual-Stage Processing</h3>
+          <p>Face detection runs on a low-res 400px feed to maximize FPS, while the UI displays a high-res 660px
+            preview.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / CTA -->
+    <section class="pricing" id="download">
+      <div class="pricing-content">
+        <div class="price-punchline">👉 $5.00. That's less than a bag of chips. More useful than your laptop touchpad
+          for scrolling.</div>
+        <div class="price-sub">One-Time Payment, forever yours.</div>
+        <a href="https://www.creem.io/test/payment/prod_3jeEBdtdDaueVInVH6ZNC1" class="btn-primary"
+          data-creem-embed>Download for Windows</a>
+        <div class="guarantee">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          100% refund guarantee
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq-section">
+      <h2>Curious? (FAQ)</h2>
+
+      <details class="faq-item">
+        <summary>Is NodScroll safe? Does it record me?</summary>
+        <p>NodScroll is 100% safe. Everything runs locally on your own computer. No images or video frames are ever
+          captured, stored, or sent anywhere. No one sees your webcam — not even us.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is it heavy on my CPU/Battery?</summary>
+        <p>Nope! It's incredibly lightweight. The background dual-stage vision pipeline runs detection on a highly
+          down-scaled feed just to find your head, ensuring maximum FPS while using minimal system resources.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it work with my glasses/headphones?</summary>
+        <p>Yes. The tracking focuses on structural facial features and vertical movement, so your stylish glasses or
+          bulky headphones won't confuse it at all.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What platforms are supported?</summary>
+        <p>Currently available for Windows only. Stay tuned for Mac👀.</p>
+      </details>
+
+
+    </section>
+
+    <footer>
+      <p>NodScroll &copy; 2026. Made with lots of head nods.</p>
+    </footer>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
